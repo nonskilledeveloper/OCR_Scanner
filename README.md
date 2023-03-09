@@ -6,7 +6,7 @@ This software i wrote it for a friend, he asked me to wrote this since he consta
 
 We need a capture with phone numbers and usernames, like the following example:
 
-![](https://assets.nonskilledeveloper.com/16675456834447.jpg)
+![](https//assets.nonskilledeveloper.com/16675456834447.jpg)
 
 This is petty similar to the one my friend was used to see. 
  
@@ -14,18 +14,18 @@ Now, we have to save this capture in the same folder as our OCR_Scanner, and the
 
 We would have something very similar to this
 
-![](https://assets.nonskilledeveloper.com/16675459486870.jpg)
+![](http://assets.nonskilledeveloper.com/16675459486870.jpg)
 
 Now, we execute the OCR_Scanner from the terminal of our operating system
 
-![](https://assets.nonskilledeveloper.com/16675460180043.jpg)
+![](http://assets.nonskilledeveloper.com/16675460180043.jpg)
 
 It will analyze all the captures that you add to the folder, in a few seconds, in this case i only used one capture, but you can add even hundreds
 
 At the final, you have to do an "Enter" into the terminal, and you will get a csv document similar to this one
 
-![](https://assets.nonskilledeveloper.com/16675461656445.jpg)
+![](http://assets.nonskilledeveloper.com/16675461656445.jpg)
 
-![](https://assets.nonskilledeveloper.com/16675462755669.jpg)
+![](http://assets.nonskilledeveloper.com/16675462755669.jpg)
 
 As it is a CSV file, it's possible to import these contacts to the telephone, some telephones can read contacts from a CSV file, others need to install an extra application, but it is completely possible, and it saves time when you need to write contacts this way for any reason 
