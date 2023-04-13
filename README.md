@@ -1,31 +1,45 @@
 # OCR_Scanner
 
-This software i wrote it for a friend, he asked me to wrote this since he constantly received such kind of lists with the purpose to send them a message, and he was very tired of writing down these numbers manually in his smartphone, this was a very repetitive task, and he asked me if i was able to authomatize it
+This is a simple script written in Python to extract phone numbers and usernames from a set of images using OCR. The extracted data is saved in a CSV file named contacts.csv.
 
-## How to use it
+To use this script, you will need to have Python installed on your machine. You will also need to install the following packages:
 
-We need a capture with phone numbers and usernames, like the following example:
+* pytesseract
+* PIL
+* csv
 
-![](https//assets.nonskilledeveloper.com/16675456834447.jpg)
+You can install these packages using pip by running the following command:
 
-This is petty similar to the one my friend was used to see. 
- 
-Now, we have to save this capture in the same folder as our OCR_Scanner, and the capture must to be named with the nombers starting from "1.png" (It also supports jpg images)
+`pip install pytesseract Pillow csv`
 
-We would have something very similar to this
+You will also need to install Tesseract OCR on your machine. You can download the installer for Tesseract OCR from the following link:
+https://github.com/UB-Mannheim/tesseract/wiki
 
-![](http://assets.nonskilledeveloper.com/16675459486870.jpg)
+Once you have installed the required packages and Tesseract OCR, you can run the script by executing the following command:
 
-Now, we execute the OCR_Scanner from the terminal of our operating system
+`python contact_parser.py`
 
-![](http://assets.nonskilledeveloper.com/16675460180043.jpg)
+# Usage
 
-It will analyze all the captures that you add to the folder, in a few seconds, in this case i only used one capture, but you can add even hundreds
+To use this script, you will need to capture images containing phone numbers and usernames. The images should be named as follows:
 
-At the final, you have to do an "Enter" into the terminal, and you will get a csv document similar to this one
+`1.png, 2.png, 3.png, ...`
 
-![](http://assets.nonskilledeveloper.com/16675461656445.jpg)
+You can also use JPEG images, but you will need to change the file extension in the script.
 
-![](http://assets.nonskilledeveloper.com/16675462755669.jpg)
+The script will extract phone numbers and usernames from each image and save the data in a CSV file named contacts.csv.
 
-As it is a CSV file, it's possible to import these contacts to the telephone, some telephones can read contacts from a CSV file, others need to install an extra application, but it is completely possible, and it saves time when you need to write contacts this way for any reason 
+# Notes
+
+* This script is only designed to extract phone numbers with 10 digits.
+* Usernames are identified by the "@" symbol at the beginning of the text.
+* Usernames must be between 7 and 25 characters long.
+* The script will discard any phone numbers or usernames that contain invalid characters.
+* If there are more phone numbers than usernames in a single image, or vice versa, the script will print a warning message.
+
+# License
+
+This project is licensed under the GNU General Public License v3.0 - see the [<u>LICENSE</u>](https://github.com/nonskilledeveloper/OCR_Scanner/blob/main/LICENSE) file for details.
+
+# Acknowledgments
+Thanks to the developers of pytesseract, PIL, and csv for creating these helpful packages.
